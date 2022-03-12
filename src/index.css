@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-bg{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+
+
+.btn{
+  border: none;
+  text-align: center;
+  font-size: 1.9vh;
+  text-transform: uppercase;
+  border: .35vh solid #000;
+  border-radius: 20px;
+  padding: .8vh 0;
+  width: 20vh;
+  font-weight: 400;
+  background: transparent;
+  margin: 0 2.4vh;
+  cursor: pointer;
+  color:#000;
+  border-color: #c2e49b;
+}
+.btn.btn-gruen{
+  background-color: #c2e49b;
+  color: #000;
+  border-color: #c2e49b;
+  transition: all 0.5s ease-in-out;
+}
+.btn.btn-gruen:hover{
+  background: transparent;
+  border-color: #c2e49b;
+  color: #000;
+}
+.btn.white-btn{
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.btn.white-btn:hover{
+  background-color: #c2e49b;
+  color: #000;
+  border-color: #c2e49b;
+}
+
+
+h1{
+  font-size: 6vh !important; 
+  
+}
+
+section{
+  min-height: 92vh;
+}
+
+.h1-container{
+  border: 2px solid #fff;
+  text-align: center;
+  
+  padding-top: 2vh;
+  
+ 
+}
+
+.centered{
+  text-align: center;
+}
+
+.margin4vh{
+  margin-bottom: 4vh;
+}
+
+.vertical-centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+h2{
+  font-size: 4.5vh !important;
+  margin-bottom: 4vh!important;
+}
+
+h2::before{
+  content: '';
+    background: #000;
+    height: .3vh;
+    width: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(8vh);
+    border-radius: .2vh;
+}
+
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;

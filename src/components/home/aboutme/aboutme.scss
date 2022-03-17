@@ -141,21 +141,21 @@
       font-size: 2.4vh;
   }
 
-  @media screen and (max-width: 972px){
+  @media screen and (max-width: 900px){
   
 
       .flex-items-about:nth-child(1){
-        width: 80%;
+        width: 90%;
         margin: 2vh;
         margin-top: 4vh;
       }
       .flex-items-about:nth-child(2){
-        width: 80%;
+        width: 90%;
         
         margin: 2vh;
       }
       .flex-items-about:nth-child(3){
-        width: 80%;
+        width: 90%;
         margin: 2vh;
         margin-bottom: 4vh;
       }
@@ -165,10 +165,33 @@
           margin-left: 3vh;
       }
 
-      .flex-items-about:nth-child(2):hover{
-        box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 1);
+
+      
+      .shadow{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 30vh;
+        height: 30vh;
+      }
+
+      .about-image{
+        margin-top: 5vh;
+        background-size: cover;
+      
+        width: 30vh;
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+      }
+      .flex-items-about:nth-child(1){
+        box-shadow: 0px 8px 8px 5px rgba(0, 0, 0, 0);
       }
     
+      .icons-about{
+        margin-top: 1vh;
+        }
   }
       
   

@@ -4,7 +4,20 @@ module.exports = {
     	"./src/**/*.{vue,js,ts,jsx,tsx}",
     ],  
     theme: {
-    	extend: {},
+    	extend: {
+        gridTemplateRows: {
+          'auto1': 'auto 1fr',
+        },
+        gridTemplateColumns: {
+          'cards': 'repeat(auto-fit, minmax(250px, 1fr))',
+        },
+        colors: {
+          'light-green': '#E9F5DB',
+          'hard-green': '#c2e49b',
+        },
+      },
     },
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/custom-forms')
+    ],
   }

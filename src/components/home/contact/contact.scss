@@ -1,0 +1,155 @@
+#contact {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .contact-box {
+    width: clamp(100px, 90%, 1000px);
+    margin: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 1);
+    border-radius: 12px 12px 12px 12px;
+   
+    
+  }
+  
+
+  .contact-links-wrapper, .contact-form-wrapper {
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+  }
+  
+  
+  .contact-links-wrapper {
+    background-color: #E9F5DB;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .contact-form-wrapper {
+    background-color: #E9F5DB;
+    border-radius: 0 12px 12px 0;
+   
+    
+  }
+  
+  
+  
+  
+  
+  .contact-h2 {
+    font-size: 3rem;
+    margin: 1rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+   
+    color: #000;
+    text-align: center;
+  }
+  .contact-para{
+    margin-top: 1.5rem;
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .contact-link {
+    list-style-type: none;
+    background: #c2e49b;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .contact-link:hover {
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  
+  .contact-form-item {
+    position: relative;
+  }
+  
+  
+  
+  label {
+    color: #000;
+  }
+  
+  input, textarea {
+    width: 100%;
+    outline: 0;
+   
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    padding: 12px;
+    font-size: clamp(15px, 1.5vw, 18px);
+  }
+  
+  textarea{
+    height: 100px;
+  }
+
+  .contact-btn{
+    width: 30vh;
+    margin: auto;
+    margin-top: 2vh;
+    
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-links-wrapper, .contact-form-wrapper {
+      width: 100% !important;
+      background-color: #fff;
+      padding: 5% 0% 10% 0%;
+    }
+    
+    .contact-link:hover {
+      background: #E9F5DB;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .contact-btn{
+      margin-bottom: 3vh;
+    }
+    .contact-box {
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);  
+      margin: 0px 0px;
+      margin-top: 4vh;
+    }
+    
+    .contact-box:hover{
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+      
+    }
+  }
+  
+  
+  
+  
+   
+  
+  
+  
+ 
+  

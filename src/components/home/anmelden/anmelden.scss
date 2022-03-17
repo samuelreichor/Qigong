@@ -1,0 +1,104 @@
+#anmelden{
+    min-height: 92vh;
+    background-color: #E9F5DB;
+
+}
+
+.h1-anmelden{
+    font-size: 6vh !important;
+    text-align: center;
+    padding-top: 4vh;
+    margin-bottom: 5vh;
+}
+
+h4::before{
+    content: '';
+      background: #000;
+      height: .3vh;
+      width: 10vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      transform: translateY(10vh);
+      border-radius: .2vh;
+  }
+
+  .anmelden-box {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .anmelden-links-wrapper, .anmelden-rechts-wrapper {
+   
+    padding: 3% 5% 5% 5%;
+    width: min(40%);
+  }
+
+  .position-para{
+    font-size: 2.4vh;
+    margin-bottom: 4vh;
+    color: #000;
+}
+
+.anmelden-form-item{
+  color: #000;
+    margin-top: 1vh;
+    margin-bottom: 2%;
+    font-size: 2vh;
+    
+}
+.anmelden-para-rechts{
+  color: #000;
+  margin-bottom: 2%;
+  font-size: 3vh;
+  
+}
+
+.anmelden-haftung{
+  color: #000;
+  margin-top: 5vh;
+  text-align: left;
+  font-size: 1.7vh;
+}
+
+.anmelden-button-section{
+  text-align: center;
+  display: block;
+}
+.form-checkbox{
+text-align: left;
+border: 2px solid #fff !important;
+}
+
+
+.ul{
+text-decoration: underline;
+}
+.ul:hover{
+color: grey;
+}
+
+.anmelden-btn{
+  margin-bottom: 8vh;
+}
+
+@media screen and (max-width: 900px){
+    
+  
+  
+    .anmelden-links-wrapper, .anmelden-rechts-wrapper {
+      width: 100%;
+    }
+
+    .position-para{
+        margin: 5%;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+    
+}

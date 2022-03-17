@@ -15,10 +15,34 @@ import Contact from "./components/home/contact/contact"
 
 //dependencies
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { CookiesProvider, CookieBannerUniversal } from 'react-cookie-banner';
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+
 
 const App = () => {
+  const options = {
+    timeout: 5000,
+    position: positions.TOP_RIGHT
+  };
   return(
      <section id="home">
+       <CookiesProvider>
+      <CookieBannerUniversal
+        styles={{
+          banner: { backgroundColor: '#000',
+          height: '6vh' },
+          message: { fontWeight: 400 },
+          button: {backgroundColor: 'transparent', 
+                  border: '2px solid #fff',
+                  borderRadius: '13px',
+                  color: '#fff',},
+        }}
+        message="Wir benutzen cookies"
+        onAccept={() => {}}
+        cookie="user-has-accepted-cookies"
+      />
+      </CookiesProvider>
        <Navbar/>
        <ParallaxProvider>
        <Welcome/>
@@ -27,12 +51,15 @@ const App = () => {
        <AboutQigong/>
         
        <AboutMe/>
-       {/*
+       
        <Termine/>
+       <Provider template={AlertTemplate}  {...options}>
        <Anmelden/>
+       </Provider>
+       <Provider template={AlertTemplate}  {...options}>
        <Contact/>
-       <Footer/>
-       */}
+      </Provider>
+       <Footer/>   
      </section>   
    )
    

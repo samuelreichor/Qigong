@@ -26,17 +26,17 @@ const Navbar = () => {
                           
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className=" nav-item">
-                <Link to="aboutqigong" smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                <Link to="aboutqigong" smooth={true} offset={-60} duration={1000} className='nav-links' onClick={closeMobileMenu}>
                     Qigong
                 </Link>
                 </li>
                 <li className=" nav-item">
-                <Link to="aboutme" smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                <Link to="aboutme" smooth={true} offset={-60} duration={1100} className='nav-links' onClick={closeMobileMenu}>
                     Über mich
                 </Link>
                 </li>
                 <li className="nav-item">
-                <Link to="termine" smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                <Link to="termine" smooth={true} offset={-60} duration={1300} className='nav-links' onClick={closeMobileMenu}>
                     Kurskalender
                 </Link>
                 </li> 
@@ -49,7 +49,7 @@ const Navbar = () => {
                
 
             
-                  <Link to="anmelden" smooth={true} duration={1000}>
+                  <Link to="anmelden" smooth={true} offset={-60} duration={1000}>
                   <button className="btn-gruen btn">Anmelden</button>
                   </Link>
                

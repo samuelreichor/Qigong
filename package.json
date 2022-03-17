@@ -8,9 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "netlify-cli": "^9.13.0",
+    "node-fetch": "^3.2.3",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
+    "react-cookie-banner": "^4.1.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-jquery-plugin": "^1.1.7",
@@ -20,6 +25,7 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "@vitejs/plugin-react": "^1.0.7",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.7",

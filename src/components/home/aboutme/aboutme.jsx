@@ -9,9 +9,9 @@ import { Link } from "react-scroll";
 const AboutMe = () => {
     return (
         <section id="aboutme">
-                <div class="flex-container-about">
+                <div className="flex-container-about">
 
-            <div class="flex-items-about">
+            <div className="flex-items-about">
                
                         <div className = "shadow">
                             <div className = "about-image">
@@ -40,15 +40,15 @@ const AboutMe = () => {
                             </ul>
                     
              </div>
-            <div class="flex-items-about">
+            <div className="flex-items-about">
                 <h1 className="about-h1-right">Hey<span>!</span></h1>
 
                 <div className = "about-btns">
                     <Link to="contact" smooth={true} duration={1000}>
-                        <button type = "button" className = "btn btn-gruen">Kontakt</button>
+                        <button type = "button" className = "btn btn-gruen ">Kontakt</button>
                     </Link>
                     <Link to="anmelden" smooth={true} duration={1000}>
-                        <button type = "button" className = "btn white-btn">Anmelden</button>
+                        <button type = "button" className = "btn white-btn margin2vh">Anmelden</button>
                     </Link>         
                 </div>
                     <div className = "about-description">

@@ -1,0 +1,42 @@
+#termine{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    min-height: 92vh !important;
+ 
+}
+.greenbg{
+    background-color: #E9F5DB;
+    
+}
+
+.cardshadow{
+    box-shadow: 5px 5px 15px 5px rgba(130,130,130,0.61);
+}
+
+.text-black{
+   color: black !important;
+}
+
+
+#events-container{
+    min-height: 69vh !important;
+}
+
+.margin-termine{
+    margin: 0 12vh 0 12vh;
+}
+
+.accent{
+    accent-color: #c2e49b;
+    text-decoration: none;
+}
+
+.slider-width{
+    width: 30vh;
+}
+
+@media screen and (max-width: 900px){
+    .margin-termine{
+        margin: 0 2vh 0 2vh;
+    }
+}

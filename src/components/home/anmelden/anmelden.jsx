@@ -21,6 +21,11 @@ const Anmelden = () => {
   };
 
   
+    const [value, setValue] = useState("default");
+  
+    const handleChange = (e) => {
+        setValue(e.target.value);
+      };
 
     return (
 <section id="anmelden">
@@ -36,13 +41,15 @@ const Anmelden = () => {
       <p className='anmelden-para-rechts'>Wählen sie ein Kurs aus:</p>
       <div className="anmelden-form-item">
       
-      <select name="user_termin" id="datum-auswahl"  className="form-select appearance-none 
+      <select defaultValue={value} onChange={handleChange} name="user_termin" id="datum-auswahl"  className="form-select appearance-none 
              
               
               text-black
               mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-hard-green focus:ring-hard-green block w-full rounded-md sm:text-sm focus:ring-1" aria-label="Default select example">
           
-         <option selected value="hii"></option>
+          <option value="default" >
+          Termin auswählen
+        </option>
     
       </select>
       </div>

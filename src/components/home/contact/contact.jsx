@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useAlert } from "react-alert";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { BsVimeo } from "react-icons/bs";
 
 import './contact.scss'
 
@@ -48,7 +48,7 @@ const Contact = () => {
          
         </div>
         <div className="contact-link">
-          <FaYoutube/>
+          <BsVimeo/>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
                           
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className=" nav-item">
-                <Link to="aboutqigong" smooth={true} offset={-60} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                <Link to="aboutqigong" smooth={true} offset={-70} duration={1000} className='nav-links' onClick={closeMobileMenu}>
                     Qigong
                 </Link>
                 </li>

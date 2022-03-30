@@ -89,6 +89,10 @@ section{
 .margin2vh{
   margin-top: 2vh;
 }
+.marginb4vh{
+  margin-bottom: 4vh;
+
+}
 
 .vertical-centered{
   display: flex;

@@ -7,11 +7,12 @@ import Footer from "./components/common/footer/footer"
 
 //home imports
 import Welcome from "./components/home/welcome/welcome"
-import AboutQigong from "./components/home/aboutqigong/aboutqigong"
+import AboutQigong from "./components/home/Slider/slider-card.jsx"
 import AboutMe from "./components/home/aboutme/aboutme"
 import Termine from "./components/home/termine/termine"
 import Anmelden from "./components/home/anmelden/anmelden"
 import Contact from "./components/home/contact/contact"
+
 
 //dependencies
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -22,7 +23,7 @@ import AlertTemplate from "react-alert-template-basic";
 
 const App = () => {
   const options = {
-    timeout: 5000,
+    timeout: 1000,
     position: positions.TOP_RIGHT
   };
   return(
@@ -44,7 +45,8 @@ const App = () => {
       />
       </CookiesProvider>
        <Navbar/>
-       <ParallaxProvider>
+       
+      <ParallaxProvider>
        <Welcome/>
        </ParallaxProvider>
       
@@ -60,6 +62,8 @@ const App = () => {
        <Contact/>
       </Provider>
        <Footer/>   
+       
+      
      </section>   
    )
    

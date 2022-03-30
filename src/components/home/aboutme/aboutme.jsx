@@ -1,9 +1,9 @@
 import React from "react"
-import AboutmeImg from "../../../assets/images/aboutme.jpg"
+import AboutmeImg from "../../../assets/images/aboutme.jpeg"
 import "./aboutme.scss"
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { BsVimeo } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const AboutMe = () => {
@@ -34,7 +34,7 @@ const AboutMe = () => {
                                 </li>
                                 <li>
                                     <a target="_blank" className="curser-pointer" href="">
-                                    <FaYoutube/>
+                                    <BsVimeo/>
                                     </a>                                   
                                 </li>    
                             </ul>
@@ -65,6 +65,10 @@ const AboutMe = () => {
                         . 
                         </p>
                  </div>
+                 <div className="position-btn-aboutme">
+                 <button type = "button" className = "btn white-btn margin4vh">Mehr Infos</button>
+                 </div>
+                 
             </div>
         </div>
         </section>

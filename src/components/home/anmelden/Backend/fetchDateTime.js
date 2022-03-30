@@ -60,7 +60,7 @@ const datumAuswahl = document.querySelector('#datum-auswahl');
           
           
         } catch (error) {
-          //eventContainer.innerHTML = `<p class="text-center text-3xl">🙀 Something went wrong!</p>`
+      
           console.log(error);
         }
      

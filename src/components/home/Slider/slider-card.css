@@ -153,13 +153,12 @@ a.slide_btn {
     align-self: auto;
 }
 
-.image-content-slider{
-  max-width: 35vh;
-  
-}
 
-.Svg1Img{
+
+.DesktopImg{
   border-radius: 6px;
+  max-width: 35vh;
+  display: block;
 }
 
 .paragraph-slider{
@@ -169,7 +168,7 @@ a.slide_btn {
 
 .mobileh2,
 .card-text-mobile,
-.Card1Mobile{
+.MobileImg{
   display: none;
 }
 
@@ -192,7 +191,8 @@ a.slide_btn {
   .slider,
   .text-content-slider,
   .slide-content,
-  .slide_viewer{
+  .slide_viewer,
+  .DesktopImg{
     display: none;
   }
 
@@ -209,11 +209,12 @@ a.slide_btn {
     font-size:  2.4vh;
     margin-bottom: 4vh;
   }
-  
-  .Svg1Mobile{
+ 
+
+  .MobileImg{
     height: 30vh;
     width: 100vh;
-    display: block;
+    display: block !important;
     text-align: center;
   }
 }

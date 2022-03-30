@@ -1,17 +1,17 @@
-import react from "react"
+import React, {useState, useEffect, lazy, Suspense} from "react"
 
 //common imports
 import Navbar from "./components/common/navbar/navbar"
-import Footer from "./components/common/footer/footer"
 
+const Footer = lazy(() => import('./components/common/footer/footer'))
 
 //home imports
 import Welcome from "./components/home/welcome/welcome"
 import AboutQigong from "./components/home/Slider/slider-card.jsx"
-import AboutMe from "./components/home/aboutme/aboutme"
 import Termine from "./components/home/termine/termine"
 import Anmelden from "./components/home/anmelden/anmelden"
-import Contact from "./components/home/contact/contact"
+const AboutMe = lazy(() => import('./components/home/aboutme/aboutme'))
+const Contact = lazy(() => import('./components/home/contact/contact'))
 
 
 //dependencies
@@ -21,14 +21,19 @@ import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 
+
 const App = () => {
   const options = {
-    timeout: 1000,
+    timeout: 4000,
     position: positions.TOP_RIGHT
   };
+
+  
   return(
-     <section id="home">
-       <CookiesProvider>
+
+
+<section id="home">
+        <CookiesProvider>
       <CookieBannerUniversal
         styles={{
           banner: { backgroundColor: '#000',
@@ -44,16 +49,13 @@ const App = () => {
         cookie="user-has-accepted-cookies"
       />
       </CookiesProvider>
-       <Navbar/>
-       
+        <Navbar/>    
       <ParallaxProvider>
        <Welcome/>
        </ParallaxProvider>
-      
        <AboutQigong/>
-        
+       <Suspense fallback={<div>Loading...</div>}>
        <AboutMe/>
-       
        <Termine/>
        <Provider template={AlertTemplate}  {...options}>
        <Anmelden/>
@@ -62,11 +64,13 @@ const App = () => {
        <Contact/>
       </Provider>
        <Footer/>   
-       
+      </Suspense>
       
-     </section>   
-   )
-   
+         
+</section>  
+       
+     
+   )  
  }
  
  export default App

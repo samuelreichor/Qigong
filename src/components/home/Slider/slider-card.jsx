@@ -1,5 +1,5 @@
-
 import "./slider-card.css"
+
 import Card1Desktop from"../../../assets/images/Card1-desktop.jpeg"
 import Card2Desktop from"../../../assets/images/Card2-desktop.jpeg"
 import Card3Desktop from"../../../assets/images/Card3-desktop.jpeg"

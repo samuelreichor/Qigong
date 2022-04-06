@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <span className="">
                     <Link to="home" smooth={true} duration={1000} >
-                    <img  src={logo}  alt="logo" className="w-24 cursor-pointer "/>
+                    <img  src={logo}  alt="logo" className="w-24 cursor-pointer " title="Nach oben Scrollen"/>
                     </Link>
                     
                     </span>

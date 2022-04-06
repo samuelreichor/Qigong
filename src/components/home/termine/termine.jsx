@@ -10,7 +10,7 @@ const Termine = () => {
           <div className="margin-termine  grid gap-4 md:gap-6 lg:gap-8 grid-rows-auto1 ">
             <header className="text-center grid  place-items-center content-center">
             <div className="h1-container">
-                <h1>Kurskalender</h1>
+                <p>Kurskalender</p>
                 </div>
       <label htmlFor="eventAmt">Slider bewegen um mehr Termine anzuzeigen</label>
       <input type="range" id="eventAmt" min="1" value={value} max="10" className="accent cursor-grab slider-width" onChange={({ target: { value: radius } }) => {

@@ -1,0 +1,48 @@
+#information-section{
+    min-height: 92vh;
+    
+}
+
+.container-information{
+display: flex;
+justify-content: center;
+justify-items: center;
+align-content: center;
+align-items: center;
+flex-wrap: wrap;
+min-height: 80vh;
+gap: 10vh;
+
+}
+
+.text-information,
+.img-information{
+    width: 60vh;
+    
+}
+
+.text-information{
+    font-size: 2.4vh;
+    text-align: center;
+}
+
+.information-content{
+    margin-bottom: 2vh;
+}
+
+.img-information{
+    width: 50vh;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 970px) {
+    .text-information{
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .img-information{
+        display: none;
+    }
+}

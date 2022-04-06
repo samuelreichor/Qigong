@@ -30,9 +30,9 @@ const Contact = () => {
     <div className="contact-links-wrapper">
       <h2 className='contact-h2'>Kontaktiere uns</h2>
       <p className='contact-para'>
-          Wir freuen uns, das sie Interesse zeigen. Sie können uns 
+          Wir freuen uns, das du Interesse zeigst. Du kannst mich 
           jederzeit bei Problemen oder Fragen kontaktieren. Wenn die Nachricht 
-          angekommen ist, erhalten sie eine Bestätigungs-Email.
+          angekommen ist, erhalten sie eine Bestätigungs-Email. :)
       </p>
       <div className="contact-links">
         <div className="contact-link">

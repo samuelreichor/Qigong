@@ -10,6 +10,7 @@ import Welcome from "./components/home/welcome/welcome"
 import AboutQigong from "./components/home/Slider/slider-card.jsx"
 import Termine from "./components/home/termine/termine"
 import Anmelden from "./components/home/anmelden/anmelden"
+import Information from "./components/home/Information/information"
 const AboutMe = lazy(() => import('./components/home/aboutme/aboutme'))
 const Contact = lazy(() => import('./components/home/contact/contact'))
 
@@ -29,6 +30,7 @@ const App = () => {
   };
 
   
+
   return(
 
 
@@ -54,8 +56,10 @@ const App = () => {
        <Welcome/>
        </ParallaxProvider>
        <AboutQigong/>
+       <Information/>
        <Suspense fallback={<div>Loading...</div>}>
        <AboutMe/>
+       
        <Termine/>
        <Provider template={AlertTemplate}  {...options}>
        <Anmelden/>

@@ -6,6 +6,13 @@
 
 .h1-slider{ 
   text-align: center;
+  font-size: 6vh; 
+}
+
+.number-slider{
+  font-size: 4vh;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 .slider {
   
@@ -50,12 +57,12 @@
 }
 
 .slide:nth-of-type(2) {
-  background-color: #E9F5DB;
+  background-color: #f3faeb;
   
 }
 
 .slide:nth-of-type(3) {
-  background: #daefc3;
+  background: #f3faeb;
 }
 
 .slide:nth-of-type(1) {
@@ -140,12 +147,13 @@ a.slide_btn {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8vh;
+  gap: 5vh;
 }
 
 .text-content-slider{
-  max-width: 35%;
-  max-height: 45vh;
+  max-width: 38%;
+  max-height: 65vh;
+  
   text-align: center;
   flex-grow: 0;
   flex-shrink: 1;
@@ -157,12 +165,15 @@ a.slide_btn {
 
 .DesktopImg{
   border-radius: 6px;
-  max-width: 35vh;
+  max-width: 38vh;
   display: block;
 }
 
 .paragraph-slider{
-  font-size: 3vh;
+  font-size: 2.6vh;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  text-align: center;
 }
 
 
@@ -170,6 +181,11 @@ a.slide_btn {
 .card-text-mobile,
 .MobileImg{
   display: none;
+}
+
+.MobileImg{
+  height: 0vh;
+  width: 0vh;
 }
 
 @media only screen and (max-width: 1300px) {

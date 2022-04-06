@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="navbar">
                 <div className="navbar-container container ">
                     <Link to="home" smooth={true} duration={1000} className='navbar-logo' onClick={closeMobileMenu}>
-                        <img  src={logo}  alt="logo" className="cursor-pointer "/>
+                        <img  src={logo}  alt="Logo Doris Jungbauer" className="cursor-pointer " title="Scroll nach Oben"/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}

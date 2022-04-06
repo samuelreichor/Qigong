@@ -1,21 +1,32 @@
-import React from "react"
-import AboutmeImg from "../../../assets/images/aboutme.jpeg"
-import "./aboutme.scss"
+import React, {useState} from "react";
+import AboutmeImg from "../../../assets/images/aboutme.jpeg";
+import "./aboutme.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsVimeo } from "react-icons/bs";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+import MoreInfo from "./moreInfo";
+
 
 const AboutMe = () => {
+
+    const [show, setShow]=useState(false)
+  
+  
+
     return (
+      <>
+       
+  
         <section id="aboutme">
+           
                 <div className="flex-container-about">
 
             <div className="flex-items-about">
                
                         <div className = "shadow">
                             <div className = "about-image">
-                                <img src = {AboutmeImg} alt = "about-image"/>
+                                <img src = {AboutmeImg} alt = "Doris Jungbauer Profil Bild" title="Das bin ich"/>
                             </div>
                         </div>
                             <h2 className="centered marginh2">Doris Jungbauer</h2>
@@ -41,37 +52,49 @@ const AboutMe = () => {
                     
              </div>
             <div className="flex-items-about">
-                <h1 className="about-h1-right">Hey<span>!</span></h1>
+                <p className="about-h1-right">Wer bin ich<span>?</span></p>
 
                 <div className = "about-btns">
-                    <Link to="contact" smooth={true} duration={1000}>
+                    <Link to="contact" smooth={true} duration={1000} offset={-20}>
                         <button type = "button" className = "btn btn-gruen ">Kontakt</button>
                     </Link>
-                    <Link to="anmelden" smooth={true} duration={1000}>
+                    <Link to="anmelden" smooth={true} duration={1000} offset={-60}>
                         <button type = "button" className = "btn white-btn margin2vh">Anmelden</button>
                     </Link>         
                 </div>
                     <div className = "about-description">
           
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived 
-                        not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+                    <p> Studiert habe ich zeitgenössischen Tanz auf dem Brucknerkonservatorium in Linz. 
+                        Nach einigen Tanzprojekten und Bewegungsausbildungen, fing ich nicht ganz unfreiwillig an, 
+                        mich für die traditionelle chinesische Medizin und vor allem für Qigong zu interessieren. 
+                        Leider habe ich schon in jungen Jahren eine klassische rheumatoide Form entwickelt und ich wusste 
+                        sehr schnell, dass ich nach alternativen medizinischen Methoden suchen muss. Ich habe mich für TCM 
+                        entschieden und dann 2008 angefangen Qigong professionell zu erlernen. Durch das Verinnerlichen der 
+                        Qigong-Prinzipien, konnte ich meine Autoimmunerkrankung schließlich besänftigen und mich wieder beweglich 
+                        und kräftig fühlen.   
                         
                          </p>
 
                         <p> <br></br>
-                        Heute will ich meine Leidenschaft an andere weitergeben und junge Menschen dazu bewegen, sich Ziele zu setzen und diese zu verfolgen.
-                        . 
+                        Gerne gebe ich dir mein Wissen in meinen Kursen weiter.
+                        Ich freue mich auf dich! 
                         </p>
                  </div>
                  <div className="position-btn-aboutme">
-                 <button type = "button" className = "btn white-btn margin4vh">Mehr Infos</button>
+                     <Link>
+                     <button type = "button" className = "btn white-btn margin4vh" onClick={() => setShow(!show)}>Mehr Infos</button>
+                     </Link>
+                 
+                 
                  </div>
                  
             </div>
         </div>
         </section>
+        {
+            show ? <MoreInfo/> : null
+        }
+        </>
     )
 }
 

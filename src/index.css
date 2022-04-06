@@ -73,7 +73,7 @@ section{
 .h1-container{
   
   text-align: center;
-  
+  font-size: 6vh; 
   padding-top: 2vh;
   
  
@@ -108,9 +108,10 @@ h2{
 
 h2::before{
   content: '';
-    background: #000;
-    height: .3vh;
-    width: 10vh;
+    background: #181818;
+    
+    height: .25vh;
+    width: 6vh;
     margin-left: auto;
     margin-right: auto;
     display: block;

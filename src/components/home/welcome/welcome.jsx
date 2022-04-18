@@ -31,7 +31,7 @@ const Welcome = () => {
                             <p className="welcome-important-stuff">Körpertraining für ganzheitliche Gesundheit </p>
                         </div>
                         <div className="centered-btn">
-                            <Link to="anmelden">
+                            <Link to="anmelden" smooth={true} duration={1000} offset={-60}>
                             <div className="btn white-btn">Anmelden</div>
                             </Link>
                             

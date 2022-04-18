@@ -10,7 +10,7 @@ const Anmelden = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-    emailjs.sendForm('service_mwlh8b7', 'template_ve0jhtj', form.current, 'user_4qCEPNJsuE6MTOkr5IRBD')
+    emailjs.sendForm('service_ys35be4', 'template_159gexg', form.current, '3WgIzozHv0oGOOLna')
       .then(() => {
         alert.success("Danke für die Anmeldung")
       }, (error) => {
@@ -87,7 +87,7 @@ const Anmelden = () => {
   </div>
   </div>
          <div className='anmelden-button-section'>
-         <p className="position-para">Bei einer Erfolgreichen Anmeldung erhalten sie ein Email mit den wichtigsten Daten:)</p>
+         <p className="position-para">Bei einer Erfolgreichen Anmeldung erhaltest du ein Email mit den wichtigsten Daten:)</p>
          <input className="btn btn-gruen anmelden-btn" type="submit" value="Anmelden" />
           
          </div>

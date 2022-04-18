@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useAlert } from "react-alert";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { BsVimeo } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
 
 import './contact.scss'
 
@@ -14,7 +14,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_ahd6yr7', 'template_jli0ypm', form.current, 'user_4qCEPNJsuE6MTOkr5IRBD')
+    emailjs.sendForm('service_ys35be4', 'template_8844i5b', form.current, '3WgIzozHv0oGOOLna')
       .then(() => {
         alert.success("Die Nachricht wurde versendet");
       }, (error) => {
@@ -28,27 +28,29 @@ const Contact = () => {
 <section id="contact">
   <div className="contact-box">
     <div className="contact-links-wrapper">
-      <h2 className='contact-h2'>Kontaktiere uns</h2>
+      <h2 className='contact-h2'>Kontaktiere mich</h2>
       <p className='contact-para'>
-          Wir freuen uns, das du Interesse zeigst. Du kannst mich 
+          Ich freue mich, das du Interesse zeigst. Du kannst mich 
           jederzeit bei Problemen oder Fragen kontaktieren. Wenn die Nachricht 
-          angekommen ist, erhalten sie eine Bestätigungs-Email. :)
+          angekommen ist, erhaltest du eine Bestätigungs-Email. :)
       </p>
       <div className="contact-links">
         <div className="contact-link">
-          <a target="_blank" className="curser-pointer" href="https://www.facebook.com/scooterschool.at">
+          <a target="_blank" className="curser-pointer" href="https://www.facebook.com/hubraum.linz">
           <FaFacebookF/>
           </a>
           
         </div>
         <div className="contact-link">
-          <a target="_blank" className="curser-pointer" href="https://instagram.com/samisstreetplaza?utm_medium=copy_link">
+          <a target="_blank" className="curser-pointer" href="https://www.instagram.com/doris_jungbauer/">
           <FaInstagram/>
           </a>
          
         </div>
         <div className="contact-link">
-          <BsVimeo/>
+        <a target="_blank" className="curser-pointer" href="https://www.youtube.com/channel/UC0Si2S5Q1sU8SlxyWXCuW-A">
+          <BsYoutube/>
+          </a>
         </div>
       </div>
     </div>

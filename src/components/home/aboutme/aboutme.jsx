@@ -3,7 +3,7 @@ import AboutmeImg from "../../../assets/images/aboutme.jpeg";
 import "./aboutme.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { BsVimeo } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
 import { Link, animateScroll as scroll } from "react-scroll";
 import MoreInfo from "./moreInfo";
 
@@ -34,18 +34,18 @@ const AboutMe = () => {
 
                             <ul className = "icons-about curser-pointer">
                                 <li>
-                                    <a target="_blank" className="curser-pointer" href="">
+                                    <a target="_blank" className="curser-pointer" href="https://www.facebook.com/hubraum.linz">
                                         <FaFacebookF/> 
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" className="curser-pointer" href="">
+                                    <a target="_blank" className="curser-pointer" href="https://www.instagram.com/doris_jungbauer/">
                                         <FaInstagram/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" className="curser-pointer" href="">
-                                    <BsVimeo/>
+                                    <a target="_blank" className="curser-pointer" href="https://www.youtube.com/channel/UC0Si2S5Q1sU8SlxyWXCuW-A">
+                                    <BsYoutube/>
                                     </a>                                   
                                 </li>    
                             </ul>

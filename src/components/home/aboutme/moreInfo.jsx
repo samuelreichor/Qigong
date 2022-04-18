@@ -4,7 +4,7 @@ const MoreInfo = () => {
     return (
         <section id="moreInfo-section">
                 <div className="container-moreInfo">
-                    <h2 className="centered">Detaillierte Info über mich</h2>
+                    <h3 className="centered headline line">Detaillierte Info über mich</h3>
                     <div className="paragraph-moreInfo">
                         <p>
                         Studiert habe ich zeitgenössischen Tanz auf dem Brucknerkonservatorium 

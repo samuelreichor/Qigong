@@ -197,6 +197,23 @@
       .icons-about{
         margin-top: 1vh;
         }
+
+        .container-moreInfo{
+          min-width: 90%;
+        }
+
+        .line::before{
+          content: '';
+            background: #181818;
+            
+            height: .25vh;
+            width: 6vh;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(15vh) !important;
+            border-radius: .2vh;
+        }
   }
 
 
@@ -213,6 +230,24 @@
     margin-bottom: 20vh;
     text-align: center;
     font-size: 2.4vh;
+  }
+
+  .headline{
+    font-size: 4.5vh !important;
+    margin-bottom: 4vh!important;
+  }
+  
+  .headline::before{
+    content: '';
+      background: #181818;
+      
+      height: .25vh;
+      width: 6vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      transform: translateY(8vh);
+      border-radius: .2vh;
   }
       
   

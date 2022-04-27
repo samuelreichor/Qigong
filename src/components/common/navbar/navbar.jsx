@@ -5,7 +5,7 @@ import "./navbar.scss"
 import { FaBars, FaTimes } from 'react-icons/fa';
 import {Link} from 'react-scroll'
 
-import logo from "../../../assets/images/logo_black.png"
+import logo from "../../../assets/images/logo_black.webp"
 
 
 const Navbar = () => {

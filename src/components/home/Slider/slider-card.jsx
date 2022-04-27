@@ -1,9 +1,9 @@
 import "./slider-card.css"
 
 
-import Card1Desktop from"../../../assets/images/Card1Desktop.jpeg"
-import Card2Desktop from"../../../assets/images/Card2Desktop.jpeg"
-import Card3Desktop from"../../../assets/images/Card3Desktop.jpeg"
+import Card1Desktop from"../../../assets/images/Card1Desktop.webp"
+import Card2Desktop from"../../../assets/images/Card2Desktop.webp"
+import Card3Desktop from"../../../assets/images/Card3Desktop.webp"
 
 
 import Card1 from"../../../assets/images/card1.svg"

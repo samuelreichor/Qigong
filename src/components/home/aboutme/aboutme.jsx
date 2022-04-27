@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import AboutmeImg from "../../../assets/images/aboutme.jpeg";
+import AboutmeImg from "../../../assets/images/aboutme.webp";
 import "./aboutme.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

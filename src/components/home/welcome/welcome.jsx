@@ -1,5 +1,5 @@
 import "./welcome.scss"
-import welcomebackground from"../../../assets/images/qigong-buecher.jpg"
+import welcomebackground from"../../../assets/images/qigong-buecher.webp"
 import welcomebackgroundMobile from"../../../assets/images/Joga-Welcome.svg"
 import { Parallax } from 'react-scroll-parallax';
 import {Link} from 'react-scroll'

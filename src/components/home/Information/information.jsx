@@ -1,6 +1,6 @@
 import "./information.scss"
 import { Link, animateScroll as scroll } from "react-scroll";
-import InformationImg from "../../../assets/images/information.jpeg"
+import InformationImg from "../../../assets/images/information.webp"
 const Information = () => {
     return(
     <section id="information-section">

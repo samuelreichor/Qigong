@@ -27,7 +27,7 @@ const Footer = () => {
                     </span>
                     <div className="container-footer  ">
                         <div className="icontel-footer icon-footer"><BsFillTelephoneForwardFill/></div>
-                        <div className="telefonnummer-footer"><p className='contact-footer my-2'>+43676841928216</p></div>
+                        <div className="telefonnummer-footer"><p className='contact-footer my-2'>+4367799029966</p></div>
                         <div className="email-footer"><p className='contact-footer my-2'>djqigong@gmail.com</p></div>
                         <div className="iconmail-footer icon-footer"><MdEmail/></div>
                         </div>

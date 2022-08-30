@@ -30,9 +30,7 @@ const Contact = () => {
     <div className="contact-links-wrapper">
       <h2 className='contact-h2'>Kontaktiere mich</h2>
       <p className='contact-para'>
-          Ich freue mich, das du Interesse zeigst. Du kannst mich 
-          jederzeit bei Problemen oder Fragen kontaktieren. Wenn die Nachricht 
-          angekommen ist, erhaltest du eine Bestätigungs-Email. :)
+          Ich freue mich über deine Interesse. Für Fragen und Infos stehe ich hier gerne zur Verfügung. Bei versenden einer Nachricht, erhältst du eine Bestätigungs-Email.
       </p>
       <div className="contact-links">
         <div className="contact-link">

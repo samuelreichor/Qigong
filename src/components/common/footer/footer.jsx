@@ -27,8 +27,8 @@ const Footer = () => {
                     </span>
                     <div className="container-footer  ">
                         <div className="icontel-footer icon-footer"><BsFillTelephoneForwardFill/></div>
-                        <div className="telefonnummer-footer"><p className='contact-footer my-2'>+4367799029966</p></div>
-                        <div className="email-footer"><p className='contact-footer my-2'>djqigong@gmail.com</p></div>
+                                    <div className="telefonnummer-footer"><a className='contact-footer my-2' href="tel:+4367799029966">+4367799029966</a></div>
+                                    <div className="email-footer"><a className='contact-footer my-2' href="mailto:djqigong@gmail.com">djqigong@gmail.com</a></div>
                         <div className="iconmail-footer icon-footer"><MdEmail/></div>
                         </div>
                        
@@ -52,9 +52,9 @@ const Footer = () => {
     <div className=" mx-auto px-6 ">
         <div className=" borderline-top margin4vh flex flex-col items-center">
             <div className="sm:w-2/3 text-center py-6 ">
-                <p className="">
-                    ©2022 WebDev GmbH
-                </p>
+                <a className="" href="https://steelcity-creative.at" target="_blank">
+                    ©2022 Made with 💚 from Steelcity Creative
+                </a>
             </div>
         </div>
     </div>

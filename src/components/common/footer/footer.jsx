@@ -1,14 +1,12 @@
 import "./footer.scss"
 
 import React, { useRef } from 'react';
-
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import {Link} from 'react-scroll'
-
-
-
 import logo from '../../../assets/images/logo_black.webp';
+
+const year = new Date().getFullYear();
 
 const Footer = () => {
     return (
@@ -53,7 +51,7 @@ const Footer = () => {
         <div className=" borderline-top margin4vh flex flex-col items-center">
             <div className="sm:w-2/3 text-center py-6 ">
                 <a className="" href="https://steelcity-creative.at" target="_blank">
-                    ©2022 Made with 💚 from Steelcity Creative
+                    ©{year} Made with 💚 from Steelcity Creative
                 </a>
             </div>
         </div>
